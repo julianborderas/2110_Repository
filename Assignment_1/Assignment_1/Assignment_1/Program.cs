@@ -19,13 +19,15 @@ namespace Assignment_1
 
             //Program.Add(lairds);
 
-            Program.Get("02034");
+            //Program.Get(lairds);
+
+            Program.Delete(lairds);
 
 
         }
 
         
-        public static void Get(string idFilter)
+        public static void Get(Employee employee)
         {
             var readConfig = new ReadConfiguration();
             var connString = readConfig.GetConnectionString(EnvironmentSettings.DBEnvironment);
@@ -33,10 +35,18 @@ namespace Assignment_1
 	    
 	        SqlConnection sqlConnection = new SqlConnection(connString);
 
-            string sqlStatement = String.Format("SELECT NAME from dbo.Employee WHERE ID = @ID");
+            string sqlStatement = String.Format("SELECT NAME from dbo.Employee WHERE ID = 02034");
             SqlCommand sqlCommand = new SqlCommand(sqlStatement, sqlConnection);
             sqlConnection.Open();
             sqlCommand.ExecuteNonQuery();
+
+            using (SqlDataReader reader = sqlCommand.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    Console.WriteLine(String.Format("{0}", reader["NAME"]));
+                }
+            }
             sqlConnection.Close();
 
         }
@@ -49,7 +59,7 @@ namespace Assignment_1
 
             SqlConnection sqlConnection = new SqlConnection(connString);
 
-            string sqlStatement = String.Format("DELETE from dbo.Employee WHERE ID = @ID");
+            string sqlStatement = String.Format("DELETE from dbo.Employee WHERE ID = 02034");
             SqlCommand sqlCommand = new SqlCommand(sqlStatement, sqlConnection);
             sqlConnection.Open();
             sqlCommand.ExecuteNonQuery();
