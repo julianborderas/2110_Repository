@@ -9,7 +9,7 @@ namespace Assignment_1
     {
         static void Main(string[] args)
         {
-            CreateTable();
+            //CreateTable();
 
             var lairds = new Employee()
             {
@@ -17,19 +17,61 @@ namespace Assignment_1
                 Name = "Julian"
             };
 
+            //Program.Add(lairds);
+
+            Program.Get("02034");
+
 
         }
 
-        public static void CreateEmployee()
+        
+        public static void Get(string idFilter)
         {
-            var lairds = new Employee()
-            {
-                ID = "02034",
-                Name = "Julian"
-            };
+            var readConfig = new ReadConfiguration();
+            var connString = readConfig.GetConnectionString(EnvironmentSettings.DBEnvironment);
+            Console.WriteLine(connString); 
+	    
+	        SqlConnection sqlConnection = new SqlConnection(connString);
+
+            string sqlStatement = String.Format("SELECT NAME from dbo.Employee WHERE ID = @ID");
+            SqlCommand sqlCommand = new SqlCommand(sqlStatement, sqlConnection);
+            sqlConnection.Open();
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+
         }
 
+        public static void Delete(Employee employee)
+        {
+            var readConfig = new ReadConfiguration();
+            var connString = readConfig.GetConnectionString(EnvironmentSettings.DBEnvironment);
+            Console.WriteLine(connString);
 
+            SqlConnection sqlConnection = new SqlConnection(connString);
+
+            string sqlStatement = String.Format("DELETE from dbo.Employee WHERE ID = @ID");
+            SqlCommand sqlCommand = new SqlCommand(sqlStatement, sqlConnection);
+            sqlConnection.Open();
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+
+        }
+
+        public static void Add(Employee employee)
+        {
+            var readConfig = new ReadConfiguration();
+            var connString = readConfig.GetConnectionString(EnvironmentSettings.DBEnvironment);
+            Console.WriteLine(connString);
+
+            SqlConnection sqlConnection = new SqlConnection(connString);
+
+            string sqlStatement = String.Format("INSERT into dbo.Employee VALUES('{0}','{1}');", employee.ID, employee.Name);
+            SqlCommand sqlCommand = new SqlCommand(sqlStatement, sqlConnection);
+            sqlConnection.Open();
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+
+        }
         public static void CreateTable()
         {
             var readConfig = new ReadConfiguration();
