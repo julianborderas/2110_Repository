@@ -5,4 +5,323 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="DataAccess\" />
+    <None Remove="Assignment_1" />
+    <None Remove="Azure.Core.Amqp" />
+    <None Remove="Azure.Core" />
+    <None Remove="Azure.Identity" />
+    <None Remove="Azure.Messaging.ServiceBus" />
+    <None Remove="Azure.Security.KeyVault.Certificates" />
+    <None Remove="Azure.Security.KeyVault.Keys" />
+    <None Remove="Azure.Security.KeyVault.Secrets" />
+    <None Remove="Azure.Storage.Blobs" />
+    <None Remove="Azure.Storage.Common" />
+    <None Remove="Azure.Storage.Queues" />
+    <None Remove="Microsoft.Azure.Amqp" />
+    <None Remove="Microsoft.Azure.Services.AppAuthentication" />
+    <None Remove="Microsoft.Azure.WebJobs" />
+    <None Remove="Microsoft.Azure.WebJobs.Host" />
+    <None Remove="Microsoft.Bcl.AsyncInterfaces" />
+    <None Remove="Microsoft.Data.Edm" />
+    <None Remove="Microsoft.Data.OData" />
+    <None Remove="Microsoft.Data.Services.Client" />
+    <None Remove="Microsoft.Data.SqlClient" />
+    <None Remove="Microsoft.Extensions.Configuration.Abstractions" />
+    <None Remove="Microsoft.Extensions.Configuration.Binder" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+    <None Remove="Microsoft.Extensions.Configuration.FileExtensions" />
+    <None Remove="Microsoft.Extensions.Configuration.Json" />
+    <None Remove="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <None Remove="Microsoft.Extensions.DependencyInjection" />
+    <None Remove="Microsoft.Extensions.FileProviders.Abstractions" />
+    <None Remove="Microsoft.Extensions.FileProviders.Physical" />
+    <None Remove="Microsoft.Extensions.FileSystemGlobbing" />
+    <None Remove="Microsoft.Extensions.Hosting.Abstractions" />
+    <None Remove="Microsoft.Extensions.Hosting" />
+    <None Remove="Microsoft.Extensions.Logging.Abstractions" />
+    <None Remove="Microsoft.Extensions.Logging.Configuration" />
+    <None Remove="Microsoft.Extensions.Logging" />
+    <None Remove="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <None Remove="Microsoft.Extensions.Options" />
+    <None Remove="Microsoft.Extensions.Primitives" />
+    <None Remove="Microsoft.Identity.Client" />
+    <None Remove="Microsoft.Identity.Client.Extensions.Msal" />
+    <None Remove="Microsoft.IdentityModel.Abstractions" />
+    <None Remove="Microsoft.IdentityModel.Clients.ActiveDirectory" />
+    <None Remove="Microsoft.IdentityModel.JsonWebTokens" />
+    <None Remove="Microsoft.IdentityModel.Logging" />
+    <None Remove="Microsoft.IdentityModel.Protocols" />
+    <None Remove="Microsoft.IdentityModel.Protocols.OpenIdConnect" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="Microsoft.Rest.ClientRuntime.Azure" />
+    <None Remove="Microsoft.Rest.ClientRuntime" />
+    <None Remove="Microsoft.SqlServer.Server" />
+    <None Remove="Microsoft.Win32.Registry" />
+    <None Remove="Microsoft.Win32.SystemEvents" />
+    <None Remove="Newtonsoft.Json.Bson" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="SQLitePCLRaw.core" />
+    <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="System.Data.SqlClient" />
+    <None Remove="System.Diagnostics.DiagnosticSource" />
+    <None Remove="System.Drawing.Common" />
+    <None Remove="System.Formats.Asn1" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="System.IO.Hashing" />
+    <None Remove="System.Memory.Data" />
+    <None Remove="System.Net.Http.Formatting" />
+    <None Remove="System.Runtime.Caching" />
+    <None Remove="System.Runtime.CompilerServices.Unsafe" />
+    <None Remove="System.Security.AccessControl" />
+    <None Remove="System.Security.Cryptography.Cng" />
+    <None Remove="System.Security.Cryptography.ProtectedData" />
+    <None Remove="System.Security.Permissions" />
+    <None Remove="System.Security.Principal.Windows" />
+    <None Remove="System.Spatial" />
+    <None Remove="System.Text.Encoding.CodePages" />
+    <None Remove="System.Text.Encodings.Web" />
+    <None Remove="System.Text.Json" />
+    <None Remove="System.Windows.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Azure.Core.Amqp">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Core.Amqp.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Core">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Identity">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Messaging.ServiceBus">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Messaging.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Security.KeyVault.Certificates">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Security.KeyVault.Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Security.KeyVault.Keys">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Security.KeyVault.Keys.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Security.KeyVault.Secrets">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Security.KeyVault.Secrets.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Storage.Blobs">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Storage.Common">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Azure.Storage.Queues">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Azure.Storage.Queues.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Amqp">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Services.AppAuthentication">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.WebJobs">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Azure.WebJobs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.WebJobs.Host">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Azure.WebJobs.Host.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.SqlClient">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.EnvironmentVariables">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting.Abstractions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Hosting">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Configuration">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.ConfigurationExtensions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Extensions.Msal">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.Extensions.Msal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Server">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.SystemEvents">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.IO.Hashing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory.Data">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Memory.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Extensions">
+      <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>

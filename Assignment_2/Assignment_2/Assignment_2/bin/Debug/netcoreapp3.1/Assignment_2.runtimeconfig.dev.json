@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/JulianBorderas-Ochoa/.dotnet/store/|arch|/|tfm|",
+      "/Users/JulianBorderas-Ochoa/.nuget/packages"
+    ]
+  }
+}
