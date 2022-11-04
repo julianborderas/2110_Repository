@@ -90,9 +90,12 @@
     <None Remove="System.Text.Encodings.Web" />
     <None Remove="System.Text.Json" />
     <None Remove="System.Windows.Extensions" />
+    <None Remove="Azure.Data.Tables" />
+    <None Remove="TableStorage\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
+    <Folder Include="TableStorage\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Azure.Core.Amqp">
@@ -323,5 +326,10 @@
     <Reference Include="System.Windows.Extensions">
       <HintPath>..\..\..\Assignment_1\Assignment_1\Assignment_1\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.6.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
   </ItemGroup>
 </Project>

@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_2", "Assignment_2\Assignment_2.csproj", "{76BCF543-7D2B-4C74-814D-368F326EBD88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0929475B-ED95-4654-8BA1-78B26803CE42}"
-	ProjectSection(SolutionItems) = preProject
-		app.config = app.config
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
