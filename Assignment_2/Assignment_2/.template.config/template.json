@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "JulianBorderas-Ochoa",
+  "classifications": [],
+  "description": "",
+  "name": "Assignment_2",
+  "defaultName": "Assignment_2",
+  "identity": "MyTemplate.Assignment_2.CSharp",
+  "groupIdentity": "MyTemplate.Assignment_2",
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "vsmac-category": "other/net/general"
+  },
+  "shortName": "Assignment_2",
+  "sourceName": "Assignment_2",
+  "guids": [
+    "{76BCF543-7D2B-4C74-814D-368F326EBD88}"
+  ],
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            ".vs/**/*"
+          ]
+        }
+      ]
+    }
+  ],
+  "primaryOutputs": [
+    {
+      "path": "Assignment_2/Assignment_2.csproj"
+    }
+  ]
+}
